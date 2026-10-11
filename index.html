@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исследование механизмов принятия решений...</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f9f9f9; color: #333; }
+        .loader { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <h2>Загрузка опроса... / Loading survey...</h2>
+        <p>Пожалуйста, подождите секунду.</p>
+    </div>
+
+    <script>
+        // Твои проверенные ссылки на Google Формы
+        var urls = [
+            "https://forms.gle/US715YjWWntY8SB26", // Форма 1 (Эффект потери)
+            "https://forms.gle/wWSR4SSzf2bAiJ3b6"  // Форма 2 (Эффект приобретения)
+        ];
+        
+        // Случайный выбор формы 50/50
+        var randomIndex = Math.floor(Math.random() * urls.length);
+        window.location.href = urls[randomIndex];
+    </script>
+</body>
+</html>
